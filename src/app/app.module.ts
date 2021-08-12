@@ -4,8 +4,10 @@ import {
   ThreeCoreModule,
   ThreeFogPipeModule,
   ThreeMathConstantPipeModule,
+  ThreePrimitiveModule,
 } from "@angular-three/core";
 import { ThreePlaneBufferGeometryModule } from "@angular-three/core/geometries";
+import { ThreeGroupModule } from "@angular-three/core/group";
 import { ThreeGridHelperModule } from "@angular-three/core/helpers";
 import {
   ThreeDirectionalLightModule,
@@ -17,10 +19,10 @@ import { ThreeStatsModule } from "@angular-three/core/stats";
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 
-import { AppComponent, SceneComponent } from "./app.component";
+import { AppComponent } from "./app.component";
 
 @NgModule({
-  declarations: [AppComponent, SceneComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     ThreeCoreModule,
@@ -35,6 +37,8 @@ import { AppComponent, SceneComponent } from "./app.component";
     ThreeGridHelperModule,
     ThreeOrbitControlsModule,
     ThreeStatsModule,
+    ThreeGroupModule,
+    ThreePrimitiveModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
